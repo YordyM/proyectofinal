@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "630382071360",
+    "project_id": "cursos-master-4ee92",
+    "storage_bucket": "cursos-master-4ee92.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:630382071360:android:86d0bfecda4e70bd5199a5",
+        "android_client_info": {
+          "package_name": "com.rolomuz.cursosmaster"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBqncS2ygv9MZGDXSNEeiWMWv10lhWDun8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
