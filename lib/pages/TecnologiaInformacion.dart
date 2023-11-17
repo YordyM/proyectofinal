@@ -1,13 +1,19 @@
-// ignore: file_names
 import 'package:flutter/material.dart';
+import 'package:webview_flutter/webview_flutter.dart';
 
 class TecnologiaInformacion extends StatelessWidget {
-  const TecnologiaInformacion({super.key});
+  const TecnologiaInformacion({Key? key});
+
+  final String webUrl =
+      'https://mastermky.com/tecnologia-de-la-informacion/'; // Reemplaza con tu URL
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: Text('3'),
+    return Scaffold(
+      body: WebView(
+        initialUrl: webUrl,
+        javascriptMode: JavascriptMode.unrestricted,
+      ),
     );
   }
 }
