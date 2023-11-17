@@ -1,3 +1,8 @@
+import 'package:cursosmaster/pages/AnimalesPlantas.dart';
+import 'package:cursosmaster/pages/AppSoftware.dart';
+import 'package:cursosmaster/pages/BellezaModa.dart';
+import 'package:cursosmaster/pages/EnprendimientoDigital.dart';
+import 'package:cursosmaster/pages/TecnologiaInformacion.dart';
 import 'package:flutter/material.dart';
 
 import '../main.dart';
@@ -18,13 +23,15 @@ class _MyDrawerState extends State<MyDrawer> {
         // ignore: prefer_const_constructors
         return MyApp();
       case 1:
-        return ();
+        return AppSoftware();
       case 2:
-        return ();
+        return BellezaModa();
       case 3:
-        return ();
-      // case 4:
-      //   return ();
+        return TecnologiaInformacion();
+      case 4:
+        return EnprendimientoDigital();
+      case 5:
+        return AnimalesPlantas();
     }
   }
 
@@ -74,9 +81,17 @@ class _MyDrawerState extends State<MyDrawer> {
             const Divider(
               color: Colors.black,
             ),
+            const Text(
+              'Categorias',
+              style: TextStyle(fontSize: 30, color: Colors.blueGrey),
+              textAlign: TextAlign.center,
+            ),
+            const Divider(
+              color: Colors.black,
+            ),
             ListTile(
               selected: (1 == _item),
-              leading: const Icon(Icons.tag),
+              leading: const Icon(Icons.apps),
               title: const Text(
                 'Apps y Software:',
                 style: TextStyle(
@@ -104,7 +119,7 @@ class _MyDrawerState extends State<MyDrawer> {
             ),
             ListTile(
               selected: (2 == _item),
-              leading: const Icon(Icons.arrow_forward_ios),
+              leading: const Icon(Icons.tablet_android_sharp),
               title: const Text(
                 'Tecnología de la Información',
                 style: TextStyle(
@@ -118,7 +133,7 @@ class _MyDrawerState extends State<MyDrawer> {
             ),
             ListTile(
               selected: (2 == _item),
-              leading: const Icon(Icons.arrow_forward_ios),
+              leading: const Icon(Icons.attach_money_rounded),
               title: const Text(
                 'Emprendiento digital',
                 style: TextStyle(
@@ -132,7 +147,7 @@ class _MyDrawerState extends State<MyDrawer> {
             ),
             ListTile(
               selected: (2 == _item),
-              leading: const Icon(Icons.arrow_forward_ios),
+              leading: const Icon(Icons.nature),
               title: const Text(
                 'Animales y plantas',
                 style: TextStyle(
@@ -155,12 +170,16 @@ class _MyDrawerState extends State<MyDrawer> {
     switch (pos) {
       case 0:
         return const MyApp();
-      // case 1:
-      //   return ();
-      // case 2:
-      //   return MyAp();
-      // case 3:
-      //   return Login();
+      case 1:
+        return AppSoftware();
+      case 2:
+        return BellezaModa();
+      case 3:
+        return TecnologiaInformacion();
+      case 4:
+        return EnprendimientoDigital();
+      case 5:
+        return AnimalesPlantas();
       // Agrega más casos según las páginas que quieras mostrar.
       default:
         return const Center(

@@ -1,13 +1,13 @@
 // ignore: file_names
 import 'package:flutter/material.dart';
 
-class BellezaModa extends StatelessWidget {
-  const BellezaModa({super.key});
+class AnimalesPlantas extends StatelessWidget {
+  const AnimalesPlantas({super.key});
 
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-      body: Text('2'),
+      body: Text('5'),
     );
   }
 }
