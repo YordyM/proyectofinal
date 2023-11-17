@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:proyect1/pages/page1.dart';
 
 import '../main.dart';
+import '../pages/page1.dart';
 
 class MyDrawer extends StatefulWidget {
   const MyDrawer({super.key});
@@ -40,7 +40,6 @@ class _MyDrawerState extends State<MyDrawer> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer: const MyDrawer(),
       appBar: AppBar(
         title: const Text('Evaluacion 2 - CRUD'),
       ),
