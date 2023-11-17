@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 import '../main.dart';
-import '../pages/page1.dart';
 
 class MyDrawer extends StatefulWidget {
   const MyDrawer({super.key});
@@ -19,7 +18,7 @@ class _MyDrawerState extends State<MyDrawer> {
         // ignore: prefer_const_constructors
         return MyApp();
       case 1:
-        return const page1();
+        return ();
       case 2:
         return ();
       case 3:
@@ -156,8 +155,8 @@ class _MyDrawerState extends State<MyDrawer> {
     switch (pos) {
       case 0:
         return const MyApp();
-      case 1:
-        return const page1();
+      // case 1:
+      //   return ();
       // case 2:
       //   return MyAp();
       // case 3:
