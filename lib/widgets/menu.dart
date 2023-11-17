@@ -40,9 +40,7 @@ class _MyDrawerState extends State<MyDrawer> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Evaluacion 2 - CRUD'),
-      ),
+      appBar: AppBar(),
       drawer: Drawer(
         child: ListView(
           padding: EdgeInsets.zero,
@@ -61,8 +59,14 @@ class _MyDrawerState extends State<MyDrawer> {
             ),
             ListTile(
               selected: (0 == _item),
-              leading: const Icon(Icons.content_paste),
-              title: const Text('Agregar Producto:'),
+              leading: const Icon(Icons.home),
+              title: const Text(
+                'home: ',
+                style: TextStyle(
+                    fontFamily: AutofillHints.addressCityAndState,
+                    fontStyle: FontStyle.normal,
+                    fontSize: 20),
+              ),
               onTap: () {
                 _SetItemDrawer(0);
               },
@@ -72,8 +76,14 @@ class _MyDrawerState extends State<MyDrawer> {
             // ),
             ListTile(
               selected: (1 == _item),
-              leading: const Icon(Icons.find_in_page),
-              title: const Text('Buscar Pruducto:'),
+              leading: const Icon(Icons.tag),
+              title: const Text(
+                'Categorias y Productos:',
+                style: TextStyle(
+                    fontFamily: AutofillHints.addressCityAndState,
+                    fontStyle: FontStyle.normal,
+                    fontSize: 20),
+              ),
               onTap: () {
                 _SetItemDrawer(1);
               },
@@ -81,7 +91,13 @@ class _MyDrawerState extends State<MyDrawer> {
             ListTile(
               selected: (2 == _item),
               leading: const Icon(Icons.person),
-              title: const Text('Acerca de:'),
+              title: const Text(
+                'Acerca de:',
+                style: TextStyle(
+                    fontFamily: AutofillHints.addressCityAndState,
+                    fontStyle: FontStyle.normal,
+                    fontSize: 20),
+              ),
               onTap: () {
                 _SetItemDrawer(2);
               },
@@ -89,7 +105,13 @@ class _MyDrawerState extends State<MyDrawer> {
             ListTile(
               selected: (2 == _item),
               leading: const Icon(Icons.arrow_forward_ios),
-              title: const Text('Page 2'),
+              title: const Text(
+                'Page 2',
+                style: TextStyle(
+                    fontFamily: AutofillHints.addressCityAndState,
+                    fontStyle: FontStyle.normal,
+                    fontSize: 20),
+              ),
               onTap: () {
                 _SetItemDrawer(3);
               },
