@@ -1,3 +1,5 @@
+import 'package:flutter/foundation.dart';
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 
@@ -13,6 +15,10 @@ class BellezaModa extends StatelessWidget {
       body: WebView(
         initialUrl: webUrl,
         javascriptMode: JavascriptMode.unrestricted,
+               gestureRecognizers: Set()
+    ..add(Factory<VerticalDragGestureRecognizer>(
+      () => VerticalDragGestureRecognizer(),
+    )),
       ),
     );
   }
