@@ -47,14 +47,15 @@ class _MyDrawerState extends State<MyDrawer> {
           children: <Widget>[
             const DrawerHeader(
               decoration: BoxDecoration(
-                color: Colors.black38,
+                color: Colors.blue,
               ),
               child: Text(
-                'EDWARD LEMUS',
+                'MENÚ',
                 style: TextStyle(
                   color: Colors.white,
-                  fontSize: 24,
+                  fontSize: 54,
                 ),
+                textAlign: TextAlign.center,
               ),
             ),
             ListTile(
@@ -71,14 +72,14 @@ class _MyDrawerState extends State<MyDrawer> {
                 _SetItemDrawer(0);
               },
             ),
-            // Divider(
-            //   color: Colors.black,
-            // ),
+            const Divider(
+              color: Colors.black,
+            ),
             ListTile(
               selected: (1 == _item),
               leading: const Icon(Icons.tag),
               title: const Text(
-                'Categorias y Productos:',
+                'Apps y Software:',
                 style: TextStyle(
                     fontFamily: AutofillHints.addressCityAndState,
                     fontStyle: FontStyle.normal,
@@ -92,7 +93,7 @@ class _MyDrawerState extends State<MyDrawer> {
               selected: (2 == _item),
               leading: const Icon(Icons.person),
               title: const Text(
-                'Acerca de:',
+                'Belleza y moda:',
                 style: TextStyle(
                     fontFamily: AutofillHints.addressCityAndState,
                     fontStyle: FontStyle.normal,
@@ -106,7 +107,35 @@ class _MyDrawerState extends State<MyDrawer> {
               selected: (2 == _item),
               leading: const Icon(Icons.arrow_forward_ios),
               title: const Text(
-                'Page 2',
+                'Tecnología de la Información',
+                style: TextStyle(
+                    fontFamily: AutofillHints.addressCityAndState,
+                    fontStyle: FontStyle.normal,
+                    fontSize: 20),
+              ),
+              onTap: () {
+                _SetItemDrawer(3);
+              },
+            ),
+            ListTile(
+              selected: (2 == _item),
+              leading: const Icon(Icons.arrow_forward_ios),
+              title: const Text(
+                'Emprendiento digital',
+                style: TextStyle(
+                    fontFamily: AutofillHints.addressCityAndState,
+                    fontStyle: FontStyle.normal,
+                    fontSize: 20),
+              ),
+              onTap: () {
+                _SetItemDrawer(3);
+              },
+            ),
+            ListTile(
+              selected: (2 == _item),
+              leading: const Icon(Icons.arrow_forward_ios),
+              title: const Text(
+                'Animales y plantas',
                 style: TextStyle(
                     fontFamily: AutofillHints.addressCityAndState,
                     fontStyle: FontStyle.normal,
