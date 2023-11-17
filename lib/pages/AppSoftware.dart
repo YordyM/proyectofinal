@@ -5,7 +5,7 @@ class AppSoftware extends StatelessWidget {
   const AppSoftware({Key? key});
 
   final String webUrl =
-      'https://mastermky.com/apps-y-software/'; // Reemplaza con tu URL
+      'https://mastermky.com/apps-y-software/'; 
 
   @override
   Widget build(BuildContext context) {
