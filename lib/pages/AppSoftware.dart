@@ -1,13 +1,19 @@
-// ignore: file_names
 import 'package:flutter/material.dart';
+import 'package:webview_flutter/webview_flutter.dart';
 
 class AppSoftware extends StatelessWidget {
-  const AppSoftware({super.key});
+  const AppSoftware({Key? key});
+
+  final String webUrl =
+      'https://mastermky.com/apps-y-software/'; // Reemplaza con tu URL
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: Text('1'),
+    return Scaffold(
+      body: WebView(
+        initialUrl: webUrl,
+        javascriptMode: JavascriptMode.unrestricted,
+      ),
     );
   }
 }
