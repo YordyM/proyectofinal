@@ -5,7 +5,7 @@ class BellezaModa extends StatelessWidget {
   const BellezaModa({Key? key});
 
   final String webUrl =
-      'https://mastermky.com/belleza-y-moda/'; // Reemplaza con tu URL
+      'https://mastermky.com/belleza-y-moda/'; 
 
   @override
   Widget build(BuildContext context) {
