@@ -35,7 +35,7 @@ class _MyDrawerState extends State<MyDrawer> {
     }
   }
 
-  // ignore: non_constant_identifier_names
+ 
   void _SetItemDrawer(int position) {
     Navigator.pop(context);
     setState(() {
@@ -180,7 +180,7 @@ class _MyDrawerState extends State<MyDrawer> {
         return EnprendimientoDigital();
       case 5:
         return AnimalesPlantas();
-      // Agrega más casos según las páginas que quieras mostrar.
+      
       default:
         return const Center(
           child: Text('Página no encontrada'),
